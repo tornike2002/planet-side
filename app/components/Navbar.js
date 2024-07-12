@@ -6,7 +6,10 @@ const Navbar = () => {
       <h1 className="text-white font-antonio text-28px font-normal leading-normal  uppercase">
         THE PLANETS
       </h1>
-      <nav className="text-white font-spartan text-xs">
+      <nav
+        className="text-white font-spartan text-xs font-bold leading-6 tracking-[1px] 
+      uppercase flex gap-8"
+      >
         <Link href="/">Mercury</Link>
         <Link href="/Venus">Venus</Link>
         <Link href="/Mars">Mars</Link>
