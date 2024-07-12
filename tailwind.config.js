@@ -15,6 +15,15 @@ module.exports = {
       fontFamily: {
         antonio: ["Antonio", "sans-serif"],
       },
+      fontSize: {
+        "28px": "28px",
+      },
+      backgroundImage: {
+        custom: "url('/assets/background-stars.svg')",
+      },
+      backgroundColor: {
+        mainbg: "#070724",
+      },
     },
   },
   plugins: [],
