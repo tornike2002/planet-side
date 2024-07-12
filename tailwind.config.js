@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         antonio: ["Antonio", "sans-serif"],
+        spartan: ["League Spartan", "sans-serif"],
       },
       fontSize: {
         "28px": "28px",
