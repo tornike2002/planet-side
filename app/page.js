@@ -1,6 +1,8 @@
-
 export default function Home() {
   return (
-   <h1>hello</h1>
+    <header>
+      <h1 className="text-white"></h1>
+      <nav className="text-white"></nav>
+    </header>
   );
 }
