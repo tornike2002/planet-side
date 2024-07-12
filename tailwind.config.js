@@ -12,6 +12,19 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        antonio: ["Antonio", "sans-serif"],
+        spartan: ["League Spartan", "sans-serif"],
+      },
+      fontSize: {
+        "28px": "28px",
+      },
+      backgroundImage: {
+        custom: "url('/assets/background-stars.svg')",
+      },
+      backgroundColor: {
+        mainbg: "#070724",
+      },
     },
   },
   plugins: [],
