@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Mercury from "@/public/assets/planet-mercury.svg";
-import DataMercury from "@/app/data/data.json";
+import DataMercury from "@/data/data.json";
 import chevron from "@/public/assets/icon-source.svg";
 export default function Home() {
   const MercuryInfo = DataMercury.find((planet) => planet.name === "Mercury");
@@ -28,11 +28,7 @@ export default function Home() {
                     Wikipedia
                   </a>
                 </p>
-                <Image
-                  className="object-contain"
-                  src={chevron}
-                  alt="chevron"
-                />
+                <Image className="object-contain" src={chevron} alt="chevron" />
               </div>
             </div>
           )}

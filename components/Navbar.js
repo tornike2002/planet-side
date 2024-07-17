@@ -1,6 +1,7 @@
 import Link from "next/link";
-
+import PlanetsData from "@/data/data.json";
 const Navbar = () => {
+  console.log(PlanetsData);
   return (
     <header className="flex justify-between items-center pt-[22px] pl-8 pr-10 pb-7 border-b border-opacity-[0.2] border-white">
       <h1 className="text-white font-antonio text-28px font-normal leading-normal  uppercase">
@@ -10,13 +11,13 @@ const Navbar = () => {
         className="text-white font-spartan text-xs font-bold leading-6 tracking-[1px] 
       uppercase flex gap-8"
       >
-        <Link href="/">Mercury</Link>
-        <Link href="/Venus">Venus</Link>
-        <Link href="/Mars">Mars</Link>
-        <Link href="/Jupiter">Jupiter</Link>
-        <Link href="/Saturn">Saturn</Link>
-        <Link href="/Uranus">Uranus</Link>
-        <Link href="/Neptune">Neptune</Link>
+        {PlanetsData.map((planets) => {
+          return (
+            <Link key={planets.name} href={`Planets/${planets.name}`}>
+              {planets.name}
+            </Link>
+          );
+        })}
       </nav>
     </header>
   );
