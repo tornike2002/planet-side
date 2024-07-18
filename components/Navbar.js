@@ -1,10 +1,9 @@
 import Link from "next/link";
-import PlanetsData from "@/data/data.json";
+import PlanetsData from "../data/data.json";
 const Navbar = () => {
-  console.log(PlanetsData);
   return (
     <header className="flex justify-between items-center pt-[22px] pl-8 pr-10 pb-7 border-b border-opacity-[0.2] border-white">
-      <h1 className="text-white font-antonio text-28px font-normal leading-normal  uppercase">
+      <h1 className="text-white font-antonio text-28px font-normal leading-normal uppercase">
         THE PLANETS
       </h1>
       <nav
@@ -13,7 +12,7 @@ const Navbar = () => {
       >
         {PlanetsData.map((planets) => {
           return (
-            <Link key={planets.name} href={`Planets/${planets.name}`}>
+            <Link key={planets.name} href={`/${planets.name}`}>
               {planets.name}
             </Link>
           );
