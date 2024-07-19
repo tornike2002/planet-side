@@ -5,16 +5,16 @@ const Navbar = () => {
   return (
     <>
       <header
-        className="sm:flex sm:flex-col gap-5 sm:justify-center sm:items-center pt-[22px] pl-8 pr-10 pb-7 border-b border-opacity-[0.2]
-     border-white md:flex-row md:justify-between hidden"
+        className="sm:flex sm:flex-col gap-5  sm:justify-center sm:items-center pt-[22px] pl-5 pr-5 pb-7 border-b border-opacity-[0.2]
+     border-white lg:flex-row md:justify-between hidden"
       >
-        <h1 className="text-white font-antonio text-28px font-normal leading-normal uppercase">
+        <h1 className="text-white font-antonio text-[28px] font-normal leading-normal uppercase">
           THE PLANETS
         </h1>
 
         <nav
           className="hidden text-white font-spartan text-xs font-bold leading-6 tracking-[1px] 
-      uppercase sm:flex gap-8"
+      uppercase sm:flex gap-[30px]"
         >
           {PlanetsData.map((planets) => {
             return (
