@@ -2,7 +2,8 @@ import Link from "next/link";
 import PlanetsData from "../data/data.json";
 const Navbar = () => {
   return (
-    <header className="flex justify-between items-center pt-[22px] pl-8 pr-10 pb-7 border-b border-opacity-[0.2] border-white">
+    <header className="flex flex-col gap-5 justify-center items-center pt-[22px] pl-8 pr-10 pb-7 border-b border-opacity-[0.2]
+     border-white md:flex-row md:justify-between">
       <h1 className="text-white font-antonio text-28px font-normal leading-normal uppercase">
         THE PLANETS
       </h1>
