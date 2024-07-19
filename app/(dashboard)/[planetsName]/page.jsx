@@ -26,6 +26,7 @@ const PlanetInfo = ({ params }) => {
                   <Image
                     src={planetData.images.planet}
                     alt="Planet"
+                    className="sm:w-[184px] md:w-[290px]"
                     width={111}
                     height={111}
                   />
@@ -34,6 +35,7 @@ const PlanetInfo = ({ params }) => {
                   <Image
                     src={planetData.images.internal}
                     alt="Planet Mercury"
+                    className="sm:w-[184px] md:w-[290px]"
                     width={111}
                     height={111}
                   />
@@ -43,6 +45,7 @@ const PlanetInfo = ({ params }) => {
                   <Image
                     src={planetData.images.planet}
                     alt="Planet Mercury"
+                    className="sm:w-[184px] md:w-[290px]"
                     width={111}
                     height={111}
                   />
@@ -52,26 +55,27 @@ const PlanetInfo = ({ params }) => {
                     className="absolute bottom-[-120px] left-1/2 transform -translate-x-1/2"
                     src={planetData.images.geology}
                     alt="Planet Mercury"
+                    
                     width={158}
                     height={165}
                   />
                 ) : null}
               </div>
               <div
-                className="flex flex-col  md:items-start items-center md:flex-col justify-center 
-              gap-16 md:gap-1 "
+                className="flex flex-col sm:flex-row  md:items-start items-center md:flex-col justify-center 
+              gap-16 md:gap-1 px-6"
               >
                 <div>
                   <h1
-                    className="text-center text-[48px] md:text-[80px] md:mt-16 uppercase text-white 
+                    className="text-center sm:text-start text-[40px] sm:text-[48px] md:text-[80px] md:mt-16 uppercase text-white 
                   font-antonio pb-5 md:pb-0"
                   >
                     {planetData.name}
                   </h1>
-                  <p className="text-center max-w-[339px] md:max-w-[350px] text-white font-spartan text-[11px] leading-[22px] md:text-sm md:leading-6">
+                  <p className="text-center sm:text-start max-w-[339px] md:max-w-[350px] text-white font-spartan text-[11px] leading-[22px] md:text-sm md:leading-6">
                     {planetData.overview.content}
                   </p>
-                  <div className="flex gap-2 items-center justify-center">
+                  <div className="flex gap-2 items-center justify-center sm:justify-start">
                     <p
                       className="font-spartan text-xs md:text-sm font-bold leading-6 text-opacity-[0.5]
                      text-white pt-6 pb-8 flex items-center"
@@ -120,7 +124,10 @@ const PlanetInfo = ({ params }) => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col gap-4 px-6 md:gap-8 items-center justify-center mt-[87px] mb-11">
+            <div
+              className="flex flex-col sm:flex-row  md:justfy-center px-6 gap-4 md:gap-6
+            items-center justify-center mt-[87px] mb-11 "
+            >
               <PlanetStats info="ROTATION TIME" days={planetData.rotation} />
               <PlanetStats
                 info="REVOLUTION TIME"

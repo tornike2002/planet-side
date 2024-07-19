@@ -3,7 +3,7 @@ const PlanetButton = ({ countNumber, buttonName, onClick, isActive }) => {
     <button
       type="button"
       className={`font-spartan text-xs font-bold leading-6 tracking-[2.571px] uppercase
-   border border-solid border-white pr-2 md:pr-5 border-opacity-20 pt-4 pb-3 text-left ${
+   border border-solid border-white pr-2 md:pr-5 border-opacity-20 pt-4 pb-3 text-left w-[281px] ${
      isActive ? "bg-lightbg" : ""
    } }`}
       onClick={onClick}
