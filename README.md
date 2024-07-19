@@ -1,6 +1,6 @@
 # Planet-Side
 
-[![Vercel](https://vercelbadge.vercel.app/api/tornikes-projects/planet-side)](https://planet-side-4yp6d2188-tornikes-projects-e6766154.vercel.app/Earth)
+[![Vercel](https://vercelbadge.vercel.app/api/tornikes-projects/planet-side)]
 
 Planet-Side is a project that demonstrates the use of dynamic routes and routing in Next.js along with styling using Tailwind CSS. This project is a part of my practice to enhance my skills in building dynamic and responsive web applications.
 
@@ -34,9 +34,12 @@ Make sure you have [Node.js](https://nodejs.org/en/) installed.
    ```sh
    git clone https://github.com/tornike2002/planet-side.git
    
-2. npm install
-3. npm run dev
-4. http://localhost:3000
+2. ```sh
+   npm install
+3. ```sh
+   npm run dev
+4. ```sh
+   http://localhost:3000
 
 Contact : butiashvilitornike18@gmail.com
 
