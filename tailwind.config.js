@@ -24,6 +24,7 @@ module.exports = {
       },
       backgroundColor: {
         mainbg: "#070724",
+        lightbg: "#419EBB",
       },
     },
   },
