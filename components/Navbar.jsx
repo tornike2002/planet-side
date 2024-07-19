@@ -1,25 +1,34 @@
 import Link from "next/link";
 import PlanetsData from "../data/data.json";
+import Burgermenu from "./Burgermenu.jsx";
 const Navbar = () => {
   return (
-    <header className="flex flex-col gap-5 justify-center items-center pt-[22px] pl-8 pr-10 pb-7 border-b border-opacity-[0.2]
-     border-white md:flex-row md:justify-between">
-      <h1 className="text-white font-antonio text-28px font-normal leading-normal uppercase">
-        THE PLANETS
-      </h1>
-      <nav
-        className="text-white font-spartan text-xs font-bold leading-6 tracking-[1px] 
-      uppercase flex gap-8"
+    <>
+      <header
+        className="sm:flex sm:flex-col gap-5 sm:justify-center sm:items-center pt-[22px] pl-8 pr-10 pb-7 border-b border-opacity-[0.2]
+     border-white md:flex-row md:justify-between hidden"
       >
-        {PlanetsData.map((planets) => {
-          return (
-            <Link key={planets.name} href={`/${planets.name}`}>
-              {planets.name}
-            </Link>
-          );
-        })}
-      </nav>
-    </header>
+        <h1 className="text-white font-antonio text-28px font-normal leading-normal uppercase">
+          THE PLANETS
+        </h1>
+
+        <nav
+          className="hidden text-white font-spartan text-xs font-bold leading-6 tracking-[1px] 
+      uppercase sm:flex gap-8"
+        >
+          {PlanetsData.map((planets) => {
+            return (
+              <Link key={planets.name} href={`/${planets.name}`}>
+                {planets.name}
+              </Link>
+            );
+          })}
+        </nav>
+      </header>
+      <div className="sm:hidden">
+        <Burgermenu />
+      </div>
+    </>
   );
 };
 

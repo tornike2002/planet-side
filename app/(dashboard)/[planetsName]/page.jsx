@@ -13,7 +13,7 @@ const PlanetInfo = ({ params }) => {
   const filtered = data.filter((planet) => planet.name === params.planetsName);
   console.log(planetAsset);
   return (
-    <main className="h-screen">
+    <main className="h-full">
       {filtered.map((planetData) => {
         return (
           <div
@@ -21,21 +21,21 @@ const PlanetInfo = ({ params }) => {
             className="flex justify-around items-center flex-col"
           >
             <div className="flex flex-col  md:flex-row justify-around items-center w-full h-full">
-              <div className="relative">
+              <div className="relative mt-36 mb-36">
                 {planetAsset === "overview" ? (
                   <Image
                     src={planetData.images.planet}
-                    alt="Planet Mercury"
-                    width={290}
-                    height={290}
+                    alt="Planet"
+                    width={111}
+                    height={111}
                   />
                 ) : null}
                 {planetAsset === "internal" ? (
                   <Image
                     src={planetData.images.internal}
                     alt="Planet Mercury"
-                    width={290}
-                    height={290}
+                    width={111}
+                    height={111}
                   />
                 ) : null}
 
@@ -43,8 +43,8 @@ const PlanetInfo = ({ params }) => {
                   <Image
                     src={planetData.images.planet}
                     alt="Planet Mercury"
-                    width={290}
-                    height={290}
+                    width={111}
+                    height={111}
                   />
                 ) : null}
                 {planetAsset === "surface" ? (
@@ -57,15 +57,21 @@ const PlanetInfo = ({ params }) => {
                   />
                 ) : null}
               </div>
-              <div className="flex  md:items-start items-end md:flex-col justify-between gap-16 md:gap-1">
+              <div
+                className="flex flex-col  md:items-start items-center md:flex-col justify-center 
+              gap-16 md:gap-1 "
+              >
                 <div>
-                  <h1 className="text-[48px] md:text-[80px] md:mt-16 uppercase text-white font-antonio pb-5 md:pb-0">
+                  <h1
+                    className="text-center text-[48px] md:text-[80px] md:mt-16 uppercase text-white 
+                  font-antonio pb-5 md:pb-0"
+                  >
                     {planetData.name}
                   </h1>
-                  <p className="max-w-[339px] md:max-w-[350px] text-white font-spartan text-[11px] leading-[22px] md:text-sm md:leading-6">
+                  <p className="text-center max-w-[339px] md:max-w-[350px] text-white font-spartan text-[11px] leading-[22px] md:text-sm md:leading-6">
                     {planetData.overview.content}
                   </p>
-                  <div className="flex gap-2 items-center">
+                  <div className="flex gap-2 items-center justify-center">
                     <p
                       className="font-spartan text-xs md:text-sm font-bold leading-6 text-opacity-[0.5]
                      text-white pt-6 pb-8 flex items-center"
@@ -114,7 +120,7 @@ const PlanetInfo = ({ params }) => {
                 </div>
               </div>
             </div>
-            <div className="flex gap-4 md:gap-8 items-center justify-center mt-[87px]">
+            <div className="flex flex-col gap-4 px-6 md:gap-8 items-center justify-center mt-[87px] mb-11">
               <PlanetStats info="ROTATION TIME" days={planetData.rotation} />
               <PlanetStats
                 info="REVOLUTION TIME"
