@@ -1,7 +1,5 @@
 # Planet-Side
 
-[![Vercel](https://vercelbadge.vercel.app/api/tornikes-projects/planet-side)]
-
 Planet-Side is a project that demonstrates the use of dynamic routes and routing in Next.js along with styling using Tailwind CSS. This project is a part of my practice to enhance my skills in building dynamic and responsive web applications.
 
 ## Live Demo
