@@ -3,8 +3,8 @@
 Planet-Side is a project that demonstrates the use of dynamic routes and routing in Next.js along with styling using Tailwind CSS. This project is a part of my practice to enhance my skills in building dynamic and responsive web applications.
 
 ## Live Demo
-
-You can view the live demo of the project [here](https://planet-side-4yp6d2188-tornikes-projects-e6766154.vercel.app/Earth).
+Live: https://stellar-kheer-4bfc3b.netlify.app
+You can view the live demo of the project [here](https://stellar-kheer-4bfc3b.netlify.app).
 
 ## Features
 
